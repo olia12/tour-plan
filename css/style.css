@@ -622,6 +622,9 @@ img {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -664,6 +667,10 @@ img {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .hotel {
+    padding-top: 5px;
+    padding-bottom: 40px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
