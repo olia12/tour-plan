@@ -508,6 +508,58 @@ img {
   font-size: 12px;
   line-height: 15px;
 }
+.hotel__slider {
+  margin-left: 0;
+  margin-right: 30px;
+}
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+  position: relative;
+  border-radius: 8px;
+}
+.hotel-slider__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hotel-slider::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 9;
+}
+.hotel-slider__button {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+  z-index: 10;
+}
+
 .stars {
   flex-basis: 100%;
 }
@@ -541,51 +593,6 @@ img {
 .rating__general {
   font-size: 10px;
   margin-left: -3px;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 450px;
-  position: relative;
-  border-radius: 8px;
-}
-.swiper-container:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 10;
-}
-
-.slider {
-  width: 728px;
-}
-.slider-button {
-  position: absolute;
-  z-index: 99;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  background-color: transparent;
-}
-.slider-button--next {
-  right: 18px;
-  background-image: url(../img/arrow-next.svg);
-}
-.slider-button--prev {
-  left: 18px;
-  background-image: url(../img/arrow-prev.svg);
 }
 
 @media (max-width: 1200px) {
