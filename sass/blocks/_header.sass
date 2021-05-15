@@ -27,6 +27,8 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      font-style: normal
+      font-weight: bold
 .logo
   width: 177px
   height: auto
@@ -45,7 +47,9 @@
     border: none
     font-size: 12px
     line-height: 15px
-    color: $text-color
+    //color: $text-color
+    &::placeholder
+      color: $text-color
   &__button
     position: absolute
     top: 0
