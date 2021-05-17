@@ -804,10 +804,10 @@ img {
 }
 
 .reviews {
-  padding: 11px 0 70px 0;
+  padding-top: 40px;
 }
 .reviews__title {
-  margin-bottom: 70px;
+  margin: 0 0 70px 0;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -820,7 +820,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
   padding: 0 97px 30px;
   margin: 45px auto 0;
   background-color: #ffffff;
@@ -848,7 +848,7 @@ img {
 }
 .reviews-slider__button {
   position: absolute;
-  top: 46%;
+  top: 39%;
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
@@ -932,8 +932,8 @@ img {
   }
 
   .newsletter {
-    padding-top: 69px;
-    padding-bottom: 72px;
+    padding-top: 89px;
+    padding-bottom: 93px;
   }
 
   .logo {
@@ -948,10 +948,13 @@ img {
     margin-left: 47px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 23px 14px;
   }
   .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .navbar-menu__item {
     font-size: 12px;
     line-height: 15px;
   }
@@ -984,6 +987,25 @@ img {
 
   .map {
     width: 340px;
+  }
+
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+    padding: 0 60px 30px;
+  }
+  .reviews-slider__button {
+    top: 43%;
+  }
+  .reviews-slider__button--prev {
+    left: 2px;
+  }
+  .reviews-slider__button--next {
+    right: 2px;
   }
 }
 @media (max-width: 768px) {
@@ -1082,6 +1104,35 @@ img {
   }
   .newsletter-title {
     margin-bottom: 37px;
+  }
+
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 43px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+    padding: 0 31px 36px;
+  }
+  .reviews-slider__item:before, .reviews-slider__item:after {
+    display: none;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
+  }
+  .reviews-slider__button {
+    top: 28px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-left: -89px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    transform: translate(50%, 0);
+    margin-right: -89px;
   }
 }
 @media (max-width: 576px) {
