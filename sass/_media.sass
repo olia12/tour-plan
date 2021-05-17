@@ -45,6 +45,7 @@
   .booking
     width: 340px
     padding: 29px 22px 26px 23px
+    margin-bottom: 0
   .map
     width: 340px
   .reviews
@@ -95,6 +96,7 @@
     padding-bottom: 40px
     padding-top: 1px
     &-name
+      max-width: 100%
       flex-basis: 100%
     &-info
       padding-bottom: 38px
@@ -107,6 +109,10 @@
   .booking
     width: 100%
     margin-bottom: 20px
+    &__price, &__heading
+      max-width: 213px
+    &__description, &__num
+      max-width: 190px
   .hotel-wrapper
     justify-content: space-between
     &__offer
@@ -130,6 +136,7 @@
       flex-direction: column
       align-items: flex-start
     &-title
+      max-width: 100%
       margin-bottom: 37px
   .reviews
     &__title
@@ -160,6 +167,11 @@
       height: 240px
     &__slider
       margin-bottom: 20px
+  .booking
+    &__price, &__heading
+      max-width: 119px
+    &__description, &__num
+      max-width: 80px
   .subscribe
     width: 100%
   .newsletter
@@ -172,12 +184,11 @@
         margin-top: 5px
         font-size: 30px
         line-height: 38px
-  // .reviews
-  //   &-slider
-  //     &__item
-  //       max-width: 580px
-  //     &__text
-  //       max-width: 455px
+  .reviews
+    &-slider
+      &__text
+        max-width: 219px
+
 @media (max-width: 320px)
   .hotel
     &-slider
