@@ -211,15 +211,14 @@
         max-width: 219px
   .activities
     padding-bottom: 50px
-    &__card
-      &_order-1
-        order: 1
-      &_order-2
-        order: 3
-      &_order-3
-        order: 2
-      &_order-4
-        order: 4
+    &__card:nth-child(1)
+      order: 1
+    &__card:nth-child(2)
+      order: 3
+    &__card:nth-child(3)
+      order: 2
+    &__card:nth-child(4)
+      order: 4
     &__title
       font-size: 18px
       line-height: 23px
