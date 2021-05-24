@@ -1,0 +1,30 @@
+.test
+  display: grid
+  grid-template-columns: minmax(140px, 265px) minmax(152px, 265px) minmax(264px, 325px) 195px
+  grid-template-row: 500px, 500px
+  grid-gap: 20px
+  &__logotip
+    border: 1px solid red
+    grid-column: 1 / 1
+    grid-row: 1
+  &__categorii
+    border: 1px solid green
+    grid-column: 2 / 2
+    grid-row: 1
+  &__addicional
+    border: 1px solid yellow
+    grid-column-start: 3 / 3
+    grid-row: 1
+  &__legalinfo
+    border: 1px solid blue
+    grid-column-start: 4 / 4
+    grid-row: 1
+  &__contact
+    border: 1px solid purple
+    grid-column: 1 / 2
+    grid-row: 2
+  &__send
+    border: 1px solid pink
+    grid-column: 3 / 4
+    grid-row: 2
+@media (max-width: 992px)
