@@ -386,9 +386,6 @@ img {
   justify-content: space-between;
   color: #ffffff;
 }
-.navbar-menu__item {
-  max-width: 170px;
-}
 .navbar-menu__link {
   color: inherit;
   text-decoration: none;
@@ -397,6 +394,9 @@ img {
   line-height: 18px;
   font-style: normal;
   font-weight: bold;
+}
+.navbar-menu__item--mobile--visible {
+  display: none;
 }
 
 .logo {
@@ -1100,6 +1100,16 @@ img {
 .footer__item--margin-phone-call {
   margin-bottom: 22px;
 }
+.footer__wrapper-link-phone {
+  width: 90%;
+}
+.footer__link-phone {
+  margin: 0;
+}
+.footer__phone {
+  color: inherit;
+  text-decoration: none;
+}
 .footer__icon {
   margin-top: 5px;
   margin-left: 3px;
@@ -1116,7 +1126,6 @@ img {
   line-height: 160%;
 }
 .footer__link {
-  width: 100%;
   text-decoration: none;
   color: inherit;
 }
@@ -1471,11 +1480,55 @@ img {
     width: 87%;
   }
 
-  .navbar-top__search, .navbar-top__user {
+  body {
+    padding-top: 78px;
+  }
+
+  .navbar--mobile-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar-top__user--mobile--hidden, .navbar-top__search--mobile--hidden {
     display: none;
   }
-  .navbar-menu {
+  .navbar-top__user--mobile--visible, .navbar-top__search--mobile--visible {
+    display: flex;
+  }
+  .navbar-top__search {
+    margin-bottom: 15px;
+  }
+  .navbar-top__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-top__search {
+    width: 243px;
+    margin-left: 0;
+  }
+  .navbar-bottom {
+    padding-top: 8px;
     display: none;
+    position: fixed;
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+    margin-bottom: 26px;
   }
 
   .logo {
@@ -1499,6 +1552,12 @@ img {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .hotel {
