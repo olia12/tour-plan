@@ -155,6 +155,7 @@
     width: 87%
   body
     padding-top: 78px
+    overflow: hidden
   .navbar
     &--mobile
       &-fixed
@@ -169,16 +170,11 @@
         &--mobile
           &--hidden
             display: none
-          &--visible
-            display: flex
       &__search
         margin-bottom: 15px
       &__user
         flex-direction: column
         justify-content: center
-      &__search
-        width: 243px
-        margin-left: 0
     &-bottom
       padding-top: 8px
       display: none
@@ -188,7 +184,15 @@
       right: 0
       bottom: 0
       &--visible
+        overflow: auto
         display: block
+      &__user
+        display: flex
+        flex-direction: column
+      &__search
+        width: 243px
+        margin-left: 0
+        margin-bottom: 13px
     &-menu
       flex-direction: column
       &__item

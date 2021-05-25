@@ -1231,41 +1231,27 @@ img {
   margin-right: 265px;
 }
 
-.test {
-  display: grid;
-  grid-template-columns: minmax(140px, 265px) minmax(152px, 265px) minmax(264px, 325px) 195px;
-  grid-template-row: 500px, 500px;
-  grid-gap: 20px;
+.thank-you {
+  padding-bottom: 30px;
 }
-.test__logotip {
-  border: 1px solid red;
-  grid-column: 1/1;
-  grid-row: 1;
+.thank-you__title {
+  margin: 0 0 15px 0;
 }
-.test__categorii {
-  border: 1px solid green;
-  grid-column: 2/2;
-  grid-row: 1;
+.thank-you__message {
+  margin: 0;
 }
-.test__addicional {
-  border: 1px solid yellow;
-  grid-column-start: 3/3;
-  grid-row: 1;
-}
-.test__legalinfo {
-  border: 1px solid blue;
-  grid-column-start: 4/4;
-  grid-row: 1;
-}
-.test__contact {
-  border: 1px solid purple;
-  grid-column: 1/2;
-  grid-row: 2;
-}
-.test__send {
-  border: 1px solid pink;
-  grid-column: 3/4;
-  grid-row: 2;
+.thank-you__button {
+  background-color: #EC1F46;
+  color: #ffffff;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 22px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -1482,6 +1468,7 @@ img {
 
   body {
     padding-top: 78px;
+    overflow: hidden;
   }
 
   .navbar--mobile-fixed {
@@ -1494,19 +1481,12 @@ img {
   .navbar-top__user--mobile--hidden, .navbar-top__search--mobile--hidden {
     display: none;
   }
-  .navbar-top__user--mobile--visible, .navbar-top__search--mobile--visible {
-    display: flex;
-  }
   .navbar-top__search {
     margin-bottom: 15px;
   }
   .navbar-top__user {
     flex-direction: column;
     justify-content: center;
-  }
-  .navbar-top__search {
-    width: 243px;
-    margin-left: 0;
   }
   .navbar-bottom {
     padding-top: 8px;
@@ -1518,7 +1498,17 @@ img {
     bottom: 0;
   }
   .navbar-bottom--visible {
+    overflow: auto;
     display: block;
+  }
+  .navbar-bottom__user {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-bottom__search {
+    width: 243px;
+    margin-left: 0;
+    margin-bottom: 13px;
   }
   .navbar-menu {
     flex-direction: column;

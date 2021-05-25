@@ -121,123 +121,22 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
-    <section class="hotel">
+
+    <section class="thank-you">
       <div class="container">
-        <div class="hotel-info">
-          <div class="hotel-info__text">
-            <div class="hotel-wrapper">
-              <div class="stars hotel-wrapper__stars">
-                <img class="stars__image" src="img/star.svg" alt="star" />
-                <img class="stars__image" src="img/star.svg" alt="star" />
-                <img class="stars__image" src="img/star.svg" alt="star" />
-                <img class="stars__image" src="img/star.svg" alt="star" />
-                <img class="stars__image" src="img/star.svg" alt="star" />
-              </div>
-              <h1 class="hotel-name hotel-wrapper__name">Grand hilton hotel</h1>
-              <span class="offer hotel-wrapper__offer">Flash Offer</span>
-            </div>
-            <!-- /.hotel-wrapper -->
-
-            <p class="hotel-description hotel-info__description">
-              Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
-            </p>
-          </div>
-          <!-- /.hotel-info__text -->
-
-          <div class="rating hotel-info__rating">
-            <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/</span>
-            <span class="rating__general">5</span>
-          </div>
-          <!-- /.hotel-info__raiting -->
+        <div class="thank-you-wrapper">
+          <h1 class="thank-you__title">Thank you, your message has been sent.</h1>
         </div>
-        <!-- /.hotel-info -->
+        <!-- /.thank-you-wrapper -->
 
-        <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide hotel-slider__slide">
-                <img class="hotel-slider__image" src="img/slide-1.jpg" alt="slide" />
-              </div>
-              <div class="swiper-slide hotel-slider__slide">
-                <img class="hotel-slider__image" src="img/slide-2.jpg" alt="slide" />
-              </div>
-              <div class="swiper-slide hotel-slider__slide">
-                <img class="hotel-slider__image" src="img/slide-3.jpg" alt="slide" />
-              </div>
-              <div class="swiper-slide hotel-slider__slide">
-                <img class="hotel-slider__image" src="img/slide-4.jpg" alt="slide" />
-              </div>
-              <div class="swiper-slide hotel-slider__slide">
-                <img class="hotel-slider__image" src="img/slide-5.jpg" alt="slide" />
-              </div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <button class="hotel-slider__button hotel-slider__button--prev"></button>
-            <button class="hotel-slider__button hotel-slider__button--next"></button>
-          </div>
-          <!-- /.swiper-container -->
-
-          <div class="hotel-data">
-            <div class="booking">
-              <div class="booking__info">
-                <div class="booking__price">
-                  <span class="booking__start">price starts as</span>
-                  <strong class="booking__pricetag">$ 8,500</strong>
-                  <span class="booking__per-room">per room / night</span>
-                </div>
-                <!-- /.booking__price -->
-
-                <div class="booking__room">
-                  <div class="booking__text">
-                    <img src="img/user.svg" alt="Icon: user" class="booking__icon" />
-                    <span class="booking__description">2 x Guests</span>
-                  </div>
-                  <!-- /.booking__text -->
-
-                  <div class="booking__text">
-                    <img src="img/home.svg" alt="Icon: home" class="booking__icon" />
-                    <span class="booking__description">1 x Room</span>
-                  </div>
-                  <!-- /.booking__text -->
-                </div>
-                <!-- /.booking__room -->
-              </div>
-              <!-- /.booking__info -->
-
-              <div class="booking__call-center">
-                <span class="booking__heading">Quick Booking</span>
-                <a href="tel:12100" class="booking__number">
-                  <img src="img/phone-call.svg" alt="Icon: phone-call" />
-                  <span class="booking__num">12100</span>
-                </a>
-              </div>
-              <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
-            </div>
-            <!-- /.booking -->
-
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.004681430924!2d79.80141631447508!3d7.5744669945377625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1621092019037!5m2!1sru!2sru"
-                width="728"
-                height="213"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-            <!-- /.map -->
-          </div>
-          <!-- /.hotel-right -->
-        </div>
-        <!-- /.hotel-grid -->
+        <p class="thank-you__message">Our manager will call you back in 5 minutes.</p>
+        <form action="index.html" target="_self">
+          <button class="button thank-you__button">Сome back</button>
+        </form>
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.hotel -->
+    <!-- /.thank-you -->
 
     <section class="newsletter">
       <div class="newsletter-wrapper">
@@ -245,14 +144,9 @@
           subscribe to our
           <span class="newsletter-title__strong"> Newsletter </span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email address"
-            name="email"
-          />
-          <button class="subscribe__button" type="submit">Send</button>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input type="text" class="subscribe__input" placeholder="Your email address" />
+          <button class="subscribe__button">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
