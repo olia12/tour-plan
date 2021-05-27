@@ -10,17 +10,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="log" data-aos="fade-right">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
-              class="logo__image"
+              class="navbar-top__image"
             />
           </a>
 
@@ -34,7 +35,11 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar-top__user navbar-top__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar-top__user navbar-top__user--mobile--hidden"
+            data-aos="fade-left"
+          >
             <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -135,7 +140,12 @@
                 <img class="stars__image" src="img/star.svg" alt="star" />
               </div>
               <h1 class="hotel-name hotel-wrapper__name">Grand hilton hotel</h1>
-              <span class="offer hotel-wrapper__offer">Flash Offer</span>
+              <span
+                class="offer hotel-wrapper__offer"
+                data-aos="zoom-out"
+                data-aos-delay="500"
+                >Flash Offer</span
+              >
             </div>
             <!-- /.hotel-wrapper -->
 
@@ -262,7 +272,9 @@
                 alt="Hotel Blue Haven"
                 class="other-packages-card__image"
               />
-              <span class="other-packages-card__offer other-packages-card__offer--big"
+              <span
+                class="other-packages-card__offer other-packages-card__offer--big"
+                data-aos="fade-right"
                 >Flash Offer</span
               >
             </div>
@@ -622,7 +634,12 @@
                   </div>
                 </div>
                 <!-- /.reviews-slider__profile -->
-                <p class="reviews-slider__text">
+                <p
+                  class="reviews-slider__text"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                >
                   It was very nice hotel with cleanliness. Staff behavior was good and
                   polite. They welcome us very well. Issue was only that Lift was not in
                   working and we were allotted to 3rd floor and amenities articles were in
@@ -779,7 +796,7 @@
       <div class="container">
         <h2 class="activities__title">Other activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
             <img
               src="img/activitie-1.jpg"
               alt="The curious corner of chamarel"
@@ -790,7 +807,7 @@
           </div>
           <!-- /.card -->
 
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img
               src="img/activitie-2.jpg"
               alt="Gymkhana club golf course"
@@ -801,7 +818,7 @@
           </div>
           <!-- /.card -->
 
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
             <img
               src="img/activitie-3.jpg"
               alt="Tamarind falls hikingtrip - full day"
@@ -812,7 +829,7 @@
           </div>
           <!-- /.card -->
 
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
             <img
               src="img/activitie-4.jpg"
               alt="The blue marine discovery quest"
@@ -1092,6 +1109,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
