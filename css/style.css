@@ -387,6 +387,7 @@ img {
   background-color: #ffffff;
   border: none;
   border-radius: 4px;
+  outline: none;
 }
 .input::-moz-placeholder {
   color: #BDBDBD;
@@ -516,6 +517,7 @@ label.invalid {
   border: none;
   font-size: 12px;
   line-height: 15px;
+  outline: none;
 }
 .search__input::-moz-placeholder {
   color: #333333;
@@ -534,6 +536,7 @@ label.invalid {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -883,6 +886,7 @@ label.invalid {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  outline: none;
 }
 .subscribe__input::-moz-placeholder {
   color: #BDBDBD;
@@ -1229,6 +1233,7 @@ label.invalid {
   font-family: Nunito, sans-serif;
   font-size: 14px;
   line-height: 19px;
+  cursor: pointer;
 }
 .other-packages__card-main {
   grid-column: span 2;
@@ -1343,6 +1348,10 @@ label.invalid {
 .footer__icon-wrapper {
   min-width: 40px;
 }
+.footer__mail {
+  text-decoration: none;
+  color: inherit;
+}
 .footer__text {
   color: #BDBDBD;
   margin: 0 0 21px -4px;
@@ -1368,6 +1377,7 @@ label.invalid {
   min-height: 123px;
   margin-top: 15px;
   margin-bottom: 22px;
+  outline: none;
 }
 .footer__button {
   min-width: 160px;
@@ -1470,11 +1480,13 @@ label.invalid {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+  outline: none;
 }
 .modal__button {
   padding: 18px 65px 17px 66px;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 .modal__info {
   font-style: normal;

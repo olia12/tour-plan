@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best tour plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+    <link 
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="stylesheet"
+      rel="preload" as="font"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
@@ -17,7 +19,7 @@
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="log" data-aos="fade-right">
+          <a href="index.html" class="logo" data-aos="fade-right">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -988,14 +990,16 @@
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/email.svg" alt="Icon: email" />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__mail">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--margin-contact">Send us a message</h3>
-            <form action="send.php" method="POST" class="form footer__form">
+            <h3 class="footer__title footer__title--margin-contact"">
+              Send us a message
+            </h3>
+            <form action="send.php" method="POST" class="form footer__form" data-aos="fade-up">
               <div class="footer__input-group">
                 <input
                   type="text"
