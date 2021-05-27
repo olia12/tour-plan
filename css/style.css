@@ -439,6 +439,11 @@ img {
   line-height: 15px;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -857,15 +862,14 @@ img {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   padding-left: 33px;
   padding-right: 75px;
   border: none;
+  border-radius: 4px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -896,6 +900,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1342,19 +1347,24 @@ img {
   color: inherit;
 }
 .footer__input {
+  width: 100%;
+  margin-bottom: 3px;
+}
+.footer__input-group {
   width: 255px;
-  height: 50px;
-  margin-bottom: 15px;
+  min-height: 50px;
 }
 .footer__message {
   width: 100%;
-  height: 123px;
+  min-height: 123px;
+  margin-top: 15px;
   margin-bottom: 22px;
 }
 .footer__button {
   min-width: 160px;
   min-height: 50px;
   padding: 18px;
+  cursor: pointer;
   font-size: 12px;
   line-height: 15px;
 }
@@ -1441,11 +1451,15 @@ img {
 }
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.modal__input:first-child {
+  margin-top: 0;
 }
 .modal__message {
   width: 100%;
   min-height: 123px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 .modal__button {
@@ -1918,6 +1932,9 @@ img {
   }
 
   .footer__input {
+    width: 100%;
+  }
+  .footer__input-group {
     width: 48%;
   }
   .footer__contact-form {
@@ -1942,6 +1959,9 @@ img {
   .modal__info {
     margin-bottom: 15px;
     width: 100%;
+  }
+  .modal__message {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 576px) {
@@ -2014,8 +2034,12 @@ img {
   .footer {
     padding-top: 67px;
   }
-  .footer__input {
+  .footer__input-group {
+    margin-top: 15px;
     width: 100%;
+  }
+  .footer__input-group:first-child {
+    margin-top: 0;
   }
   .footer-wrapper {
     grid-template-columns: 1fr;

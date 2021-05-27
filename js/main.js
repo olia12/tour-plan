@@ -1,27 +1,28 @@
 $(document).ready(function(){
   var hotelSwiper = new Swiper('.hotel-slider', {
-  // Optional parameters
-  loop: true,
+    // Optional parameters
+    loop: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
-  },
-  keyboard: {
-    enabled: true,
-  }
-});
+    // Navigation arrows
+    navigation: {
+      nextEl: '.hotel-slider__button--next',
+      prevEl: '.hotel-slider__button--prev',
+    },
+    keyboard: {
+      enabled: true,
+    }
+  });
+
   var reviewsSwiper = new Swiper('.reviews-slider', {
-  // Optional parameters
-  loop: true,
+    // Optional parameters
+    loop: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.reviews-slider__button--next',
-    prevEl: '.reviews-slider__button--prev',
-  }
-});
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews-slider__button--next',
+      prevEl: '.reviews-slider__button--prev',
+    }
+  });
 
   var menuButton = document.querySelector(".menu-button")
   menuButton.addEventListener('click', function(){
@@ -54,6 +55,34 @@ $(document).ready(function(){
 	if (e.key === "Escape" || e.keyCode === 27) {
 		closeModal(e);
 	}
-});
-  
+
+  // Обработка форм
+  $('.form').each(function(){
+      $(this).validate({
+        errorClass: "invalid",
+        messages: {
+          name: {
+            required: "Please specify your name",
+            minlength: "Name must be at least 2 letters"
+          },
+          email: {
+            required: "We need your email address to contact you",
+            email: "Your email address must be in the format of name@domain.com"
+          },
+          phone: {
+            required: "Please specify your phone",
+            minlength: "Phone must be at least 11 digits"
+          },
+        },
+      });
+    });
+
+  $(document).ready(function(){
+    $('.phone').mask('+7 (000) 000-00-00');
+  });
+
+  });
+
+
+
 });

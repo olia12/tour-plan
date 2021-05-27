@@ -31,7 +31,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'vcepokaaa@mail.ru'; // Логин на почте
-    $mail->Password   = 'oUBf?UGusy39'; // Пароль на почте
+    $mail->Password   = 'LhBeDerhvEo5T515jpMv'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('vcepokaaa@mail.ru', 'Ольга Попова'); // Адрес самой почты и имя отправителя

@@ -330,7 +330,9 @@
       height: 255px
   .footer
     &__input
-      width: 48%
+      width: 100%
+      &-group
+        width: 48%
     &__contact
       &-form
         grid-column: 1/4
@@ -351,6 +353,8 @@
     &__info
       margin-bottom: 15px
       width: 100%
+    &__message
+      margin-bottom: 15px
 @media (max-width: 576px)
   .hotel
     &-slider
@@ -400,7 +404,11 @@
   .footer
     padding-top: 67px
     &__input
-      width: 100%
+      &-group
+        margin-top: 15px
+        width: 100%
+        &:first-child
+          margin-top: 0
     &-wrapper
       grid-template-columns: 1fr
       row-gap: 28px
