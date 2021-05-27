@@ -382,7 +382,7 @@ img {
 }
 
 .input {
-  padding: 18px 0 17px 23px;
+  padding: 18px 23px 17px 23px;
   height: 50px;
   background-color: #ffffff;
   border: none;
@@ -441,6 +441,15 @@ img {
 
 .invalid {
   color: #EC1F46;
+  left: 0;
+  bottom: 0;
+}
+
+label.invalid {
+  position: absolute;
+  bottom: 2px;
+  left: 23px;
+  font-size: 11px;
   border-bottom: 1px solid #EC1F46;
 }
 
@@ -1348,9 +1357,9 @@ img {
 }
 .footer__input {
   width: 100%;
-  margin-bottom: 3px;
 }
 .footer__input-group {
+  position: relative;
   width: 255px;
   min-height: 50px;
 }
@@ -1451,15 +1460,15 @@ img {
 }
 .modal__input {
   width: 100%;
-  margin-top: 15px;
 }
-.modal__input:first-child {
-  margin-top: 0;
+.modal__input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
 }
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-top: 15px;
   margin-bottom: 15px;
 }
 .modal__button {
