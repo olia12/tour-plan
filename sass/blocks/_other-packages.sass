@@ -1,0 +1,107 @@
+.other-packages
+  padding: 40px 0 70px
+  &__title
+    margin-top: 0
+    margin-bottom: 65px
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-auto-rows: 500px
+    grid-gap: 30px
+  &__stars
+    margin-bottom: 3px
+  &__star
+      margin-left: 1px
+  &-card
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    overflow: hidden
+    position: relative
+    &__wrapper-image
+      width: 100%
+      height: 50%
+      overflow: hidden
+      &--big
+        width: 50%
+        height: 100%
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: 50
+    &__offer
+      top: 26px
+      left: 0
+      padding: 4px 9px
+      background-color: $primary
+      position: absolute
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      border-radius: 0px 4px 4px 0px
+      &--big
+        padding: 8px 20px 7px 11px
+        font-size: 12px
+        line-height: 15px
+    &__info 
+      padding: 30px 20px 25px 32px
+      background-color: $dark
+      &--big
+        width: 50%
+        padding: 40px 21px 30px 44px
+    &__card-title
+      margin: 0 0 23px 0
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      &--margin
+        margin-bottom: 27px
+    &__long-description
+      font-size: 14px
+      line-height: 160.6%
+      margin-bottom: 46px
+    &__text
+      display: flex
+      align-items: center
+      margin-bottom: 11px
+      &:last-child
+        margin-bottom: 0
+    &__room
+      display: flex
+      flex-direction: column
+      margin-bottom: 24px
+      &--margin
+        margin-bottom: 37px
+    &__icon
+      margin-right: 14px
+    &__old-price
+      margin-left: 2px
+      font-size: 14px
+      line-height: 18px
+      text-decoration: line-through 1px $light
+    &__book-now
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__pricetag
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__button
+      padding: 11px 27px 10px 26px
+      font-family: Nunito, sans-serif
+      font-size: 14px
+      line-height: 19px
+  &__card
+    &-main
+      grid-column: span 2
+      grid-row: 1
+      &--big
+        flex-direction: row

@@ -357,6 +357,14 @@ img {
   max-width: 100%;
 }
 
+.other-packages-card {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .form {
   display: flex;
   align-items: center;
@@ -374,7 +382,7 @@ img {
 }
 
 .input {
-  padding: 0 23px;
+  padding: 18px 0 17px 23px;
   height: 50px;
   background-color: #ffffff;
   border: none;
@@ -803,7 +811,6 @@ img {
   position: relative;
   padding: 97px 0 86px 0;
   background: transparent;
-  speed: 0.1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1079,6 +1086,142 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.other-packages {
+  padding: 40px 0 70px;
+}
+.other-packages__title {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.other-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 500px;
+  grid-gap: 30px;
+}
+.other-packages__stars {
+  margin-bottom: 3px;
+}
+.other-packages__star {
+  margin-left: 1px;
+}
+.other-packages-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.other-packages-card__wrapper-image {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.other-packages-card__wrapper-image--big {
+  width: 50%;
+  height: 100%;
+}
+.other-packages-card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 50;
+}
+.other-packages-card__offer {
+  top: 26px;
+  left: 0;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  position: absolute;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 0px 4px 4px 0px;
+}
+.other-packages-card__offer--big {
+  padding: 8px 20px 7px 11px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.other-packages-card__info {
+  padding: 30px 20px 25px 32px;
+  background-color: #0A223D;
+}
+.other-packages-card__info--big {
+  width: 50%;
+  padding: 40px 21px 30px 44px;
+}
+.other-packages-card__card-title {
+  margin: 0 0 23px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+.other-packages-card__card-title--margin {
+  margin-bottom: 27px;
+}
+.other-packages-card__long-description {
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 46px;
+}
+.other-packages-card__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.other-packages-card__text:last-child {
+  margin-bottom: 0;
+}
+.other-packages-card__room {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.other-packages-card__room--margin {
+  margin-bottom: 37px;
+}
+.other-packages-card__icon {
+  margin-right: 14px;
+}
+.other-packages-card__old-price {
+  margin-left: 2px;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration: line-through 1px #ffffff;
+          text-decoration: line-through 1px #ffffff;
+}
+.other-packages-card__book-now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.other-packages-card__pricetag {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.other-packages-card__button {
+  padding: 11px 27px 10px 26px;
+  font-family: Nunito, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+.other-packages__card-main {
+  grid-column: span 2;
+  grid-row: 1;
+}
+.other-packages__card-main--big {
+  flex-direction: row;
 }
 
 .footer {
@@ -1418,10 +1561,28 @@ img {
   }
 
   .other-packages-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 446px 446px;
+    grid-gap: 20px;
+  }
+  .other-packages__card-3, .other-packages__card-4 {
+    display: none;
+  }
+  .other-packages-card__card-title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 19px;
+  }
+  .other-packages-card__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .other-packages-card__room {
+    margin-bottom: 19px;
+  }
+  .other-packages-card__info {
+    padding: 24px 20px 25px 20px;
   }
 
   .booking {
@@ -1659,6 +1820,14 @@ img {
   }
   .hotel-data {
     flex-direction: column;
+  }
+
+  .other-packages-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 446px;
+  }
+  .other-packages__card-main {
+    grid-column: span 1;
   }
 
   .booking {
