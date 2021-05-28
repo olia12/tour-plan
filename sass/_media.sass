@@ -1,10 +1,20 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .other-packages
+    &-card
+      &__info
+        &--big
+          padding-left: 36px
+      &__long-description
+        margin-bottom: 34px
+        font-size: 14px
+        line-height: 22px
+      &__room
+        margin-bottom: 24px
   .hotel
     &-slider
       width: 590px
-  .other-packages
   .activities
     padding-bottom: 49px
     .card
@@ -20,25 +30,34 @@
   .newsletter
     padding-top: 89px
     padding-bottom: 93px
+  .subscribe
+    &__button
+      cursor: auto
   .logo
     width: 132px
+    cursor: auto
   .navbar
     &-top
       padding-top: 30px
       padding-bottom: 30px
       &__search
         margin-left: 47px
+      &__user
+        cursor: auto
     &-menu
       padding: 23px 14px
       &__link
         font-size: 12px
         line-height: 15px
+        cursor: auto
       &__item
         font-size: 12px
         line-height: 15px
   .search
     &__input
       width: 340px
+    &__button
+      cursor: auto
   .hotel
     padding-bottom: 60px
     &-grid
@@ -51,31 +70,57 @@
     &-data
       flex-direction: row
   .other-packages
+    &__title
+      font-size: 30px
+      line-height: 38px
     &-grid
       grid-template-columns: repeat(2, 1fr)
-      grid-template-rows: 446px 446px
       grid-gap: 20px
     &__card
-      &-3,
+      &-main
+        grid-column: span 1
+        &--big
+          flex-direction: column
       &-4
         display: none
+    &__stars
+      display: none
     &-card
       &__card-title
         font-size: 18px
         line-height: 23px
         margin-bottom: 19px
+      &__wrapper
+        &-image
+          height: 223px
+          &--big
+            width: 100%
+            min-height: 223px
+            overflow: hidden
+      &__offer
+        display: none
+      &__long-description
+        display: none
       &__text
         display: flex
         align-items: center
         margin-bottom: 5px
       &__room
         margin-bottom: 19px
-      &__info 
+      &__info
+        &--big
+          width: 100%
+          height: 50%
         padding: 24px 20px 25px 20px
+      &__button
+        cursor: auto  
   .booking
     width: 340px
     padding: 29px 22px 26px 23px
     margin-bottom: 0
+    &__button,
+    &__number
+      cursor: auto
   .map
     width: 340px
   .reviews
@@ -89,6 +134,7 @@
         padding: 0 60px 30px
       &__button
         top: 50%
+        cursor: auto
         &--prev
           left: 2px
         &--next
@@ -99,10 +145,12 @@
       margin-bottom: 20px
     &-wrapper
       flex-wrap: wrap
-  .card
-    min-width: 339px
-    min-height: 255px
-    margin-left: 0
+    .card
+      min-width: 339px
+      min-height: 255px
+      margin-left: 0
+      &__button
+        cursor: auto
   .footer
     padding-top: 73px
     &-wrapper
@@ -122,6 +170,8 @@
         grid-column: 2 / 4
         grid-row: 1
         align-self: center
+    &__link
+      cursor: auto
     &__categories
       grid-column: 1 / 1
       grid-row: 2
@@ -162,14 +212,21 @@
         width: 539px
     &__input
       width: 255px
-    &__message
-      //width: 539px
+    &__phone,
+    &__mail,
+    &__button
+      cursor: auto
     &__policy
       margin-top: 57px
       justify-content: space-between
+      &-item
+        cursor: auto
   .modal
     &__dialog
       min-width: 452px
+    &__button,
+    &__close
+      cursor: auto
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -263,10 +320,11 @@
   .other-packages
     &-grid
       grid-template-columns: 1fr
-      grid-auto-rows: 446px
-    &__card
-      &-main
-        grid-column: span 1
+    &-card
+      &__wrapper-image
+        height: 187px
+        &--big
+          min-height: 187px
   .booking
     width: 100%
     margin-bottom: 20px
@@ -361,6 +419,26 @@
       height: 179px
     &__slider
       margin-bottom: 20px
+  .other-packages
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &-card
+      &__room
+        margin-bottom: 18px
+      &__old-price
+        font-size: 12px
+        line-height: 15px
+      &__pricetag
+        font-size: 20px
+        line-height: 25px
+      &__button
+        font-size: 12px
+        line-height: 16px
+      &__card
+        &-title
+          font-size: 18px
+          line-height: 23px
   .booking
     &__price, &__heading
       max-width: 119px
