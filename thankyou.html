@@ -143,11 +143,13 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__wrapper-logo">
-            <img
-              src="img/vertical-logo.svg"
-              alt="Best tour plan"
-              class="logo footer__logo"
-            />
+            <a href="index.html">
+              <img
+                src="img/vertical-logo.svg"
+                alt="Best tour plan"
+                class="logo footer__logo"
+              />
+            </a>
           </div>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">All categories</h3>
@@ -281,14 +283,21 @@
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/email.svg" alt="Icon: email" />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__mail"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--margin-contact">Send us a message</h3>
-            <form action="send.php" method="POST" class="form footer__form">
+            <form
+              action="send.php"
+              method="POST"
+              class="form footer__form"
+              data-aos="fade-up"
+            >
               <div class="footer__input-group">
                 <input
                   type="text"
@@ -311,7 +320,6 @@
                 />
               </div>
               <!-- /.footer__input-group -->
-
               <textarea
                 class="message footer__message"
                 placeholder="Message"
