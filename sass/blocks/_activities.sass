@@ -1,6 +1,8 @@
 .activities
   padding: 60px 0 97px
   &__title
+    max-height: 60px
+    overflow: auto
     font-style: normal
     font-weight: bold
     font-size: 24px
@@ -42,6 +44,8 @@
       z-index: -2
     &__title
       max-width: 200px
+      max-height: 60px
+      overflow: auto
       margin: auto
       margin-left: 0
       color: $light
@@ -51,7 +55,10 @@
       font-size: 16px
       line-height: 20px
     &__button
+      font-family: Nunito, sans-serif
       max-width: 200px
+      max-height: 46px
+      overflow: auto
       font-style: normal
       font-weight: 600
       font-size: 12px

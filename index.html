@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best tour plan - Hotel Booking</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
@@ -66,7 +66,7 @@
                 <img
                   src="img/user-avatar.jpg"
                   alt="Avatar: Nathan"
-                  class="user__avatar"
+                  class="user__avatar user__avatar--margin"
                 />
                 <span class="user__name user__name--light">Nathan</span>
               </a>
@@ -331,7 +331,7 @@
                     class="other-packages-card__icon"
                   />
                   <span class="other-packages-card__description">
-                    1749 Wheeler Ridge&nbsp&nbspDelaware</span
+                    1749 Wheeler Ridge&nbsp;&nbsp;Delaware</span
                   >
                 </div>
                 <div class="other-packages-card__text">
@@ -356,7 +356,9 @@
               <span class="other-packages-card__old-price">$ 10,500</span>
               <div class="other-packages-card__book-now">
                 <strong class="other-packages-card__pricetag">$ 8,500</strong>
-                <button class="button other-packages-card__button">Book Now</button>
+                <button class="button other-packages-card__button" data-togle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.other-packages__book-now -->
             </div>
@@ -384,7 +386,7 @@
                     class="other-packages-card__icon"
                   />
                   <span class="other-packages-card__description">
-                    1749 Wheeler Ridge&nbsp Delaware</span
+                    1749 Wheeler Ridge&nbsp; Delaware</span
                   >
                 </div>
                 <div class="other-packages-card__text">
@@ -409,7 +411,9 @@
               <span class="other-packages-card__old-price">$ 8,500</span>
               <div class="other-packages-card__book-now">
                 <strong class="other-packages-card__pricetag">$ 3,000</strong>
-                <button class="button other-packages-card__button">Book Now</button>
+                <button class="button other-packages-card__button" data-togle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.other-packages__book-now -->
             </div>
@@ -437,7 +441,7 @@
                     class="other-packages-card__icon"
                   />
                   <span class="other-packages-card__description">
-                    1749 Wheeler Ridge&nbsp Delaware</span
+                    1749 Wheeler Ridge&nbsp; Delaware</span
                   >
                 </div>
                 <div class="other-packages-card__text">
@@ -462,7 +466,9 @@
               <span class="other-packages-card__old-price">$ 10,500</span>
               <div class="other-packages-card__book-now">
                 <strong class="other-packages-card__pricetag">$ 9,500</strong>
-                <button class="button other-packages-card__button">Book Now</button>
+                <button class="button other-packages-card__button" data-togle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.other-packages__book-now -->
             </div>
@@ -490,7 +496,7 @@
                     class="other-packages-card__icon"
                   />
                   <span class="other-packages-card__description">
-                    1749 Wheeler Ridge&nbsp Delaware</span
+                    1749 Wheeler Ridge&nbsp; Delaware</span
                   >
                 </div>
                 <div class="other-packages-card__text">
@@ -515,7 +521,9 @@
               <span class="other-packages-card__old-price">$ 4,500</span>
               <div class="other-packages-card__book-now">
                 <strong class="other-packages-card__pricetag">$ 2,500</strong>
-                <button class="button other-packages-card__button">Book Now</button>
+                <button class="button other-packages-card__button" data-togle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.other-packages__book-now -->
             </div>
@@ -543,7 +551,7 @@
                     class="other-packages-card__icon"
                   />
                   <span class="other-packages-card__description">
-                    1749 Wheeler Ridge&nbsp Delaware</span
+                    1749 Wheeler Ridge&nbsp; Delaware</span
                   >
                 </div>
                 <div class="other-packages-card__text">
@@ -568,7 +576,9 @@
               <span class="other-packages-card__old-price">$ 6,500</span>
               <div class="other-packages-card__book-now">
                 <strong class="other-packages-card__pricetag">$ 3,500</strong>
-                <button class="button other-packages-card__button">Book Now</button>
+                <button class="button other-packages-card__button" data-togle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.other-packages__book-now -->
             </div>
@@ -966,7 +976,10 @@
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/map-marker.svg" alt="Icon: map" />
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                <div class="footer__item-text">
+                  9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                </div>
+                <!-- /.footer__item-text -->
               </li>
               <li class="footer__item footer__item--margin-phone-call">
                 <div class="footer__icon-wrapper">

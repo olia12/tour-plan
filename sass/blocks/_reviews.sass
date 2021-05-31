@@ -2,6 +2,8 @@
   padding-top: 42px
   padding-bottom: 70px
   &__title
+    max-height: 135px
+    overflow: auto
     margin: 0 0 70px 0
     font-style: normal
     font-weight: bold
@@ -70,6 +72,8 @@
       border-radius: 50%
       object-fit: cover
     &__user-name
+      max-height: 30px
+      overflow: hidden
       max-width: 130px
       margin: 0 0 9px 3px
       font-style: normal
@@ -79,6 +83,8 @@
       color: $primary
       text-align: center
     &__date
+      max-height: 13px
+      overflow: hidden
       max-width: 130px
       margin-bottom: 5px
       font-style: normal
@@ -93,6 +99,9 @@
     &__image
       margin: 0 2px
     &__text
+      max-height: 114px
+      text-align: start
+      overflow: auto
       max-width: 537px
       margin: 0
       font-style: normal

@@ -7,6 +7,7 @@
         &--big
           padding-left: 36px
       &__long-description
+        max-height: 176px
         margin-bottom: 34px
         font-size: 14px
         line-height: 22px
@@ -20,9 +21,16 @@
     .card
       max-width: 230px
       max-height: 230px
+  .modal
+    &__button
+      order: 1
+    &__info
+      margin-bottom: 15px
+      min-width: 100%
+      margin-left: 0
   .footer
-    &__item-wrapper
-      margin-right: 202px
+    &__item
+      max-height: 110px
 @media (min-width: 992px)
   .button
     &:hover
@@ -55,6 +63,10 @@
     &__mail
       &:hover
         color: $light
+  .thank-you
+    &__button
+      &:hover
+        background-color: $hover-button
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -62,12 +74,8 @@
   .newsletter
     padding-top: 91px
     padding-bottom: 93px
-  .subscribe
-    &__button
-      cursor: auto
   .logo
     width: 132px
-    cursor: auto
   .breadcrum-list
     padding: 20px 0
   .navbar
@@ -76,22 +84,21 @@
       padding-bottom: 30px
       &__search
         margin-left: 47px      
-      &__user
-        cursor: auto
     &-menu
-      padding: 22px 14px
+      padding: 21px 14px
       &__link
         font-size: 12px
         line-height: 15px
-        cursor: auto
       &__item
+        max-width: 135px
         font-size: 12px
         line-height: 15px
+  .user
+    &__name
+      margin-bottom: -3px
   .search
     &__input
       width: 340px
-    &__button
-      cursor: auto
   .hotel
     padding-top: 12px
     padding-bottom: 60px
@@ -118,6 +125,7 @@
       content: ' '
   .other-packages
     &__title
+      max-height: 114px
       font-size: 30px
       line-height: 38px
     &-grid
@@ -148,6 +156,7 @@
         display: none
       &__long-description
         display: none
+        max-height: 176px
       &__text
         display: flex
         align-items: center
@@ -159,20 +168,16 @@
           width: 100%
           height: 50%
         padding: 24px 20px 25px 20px
-      &__button
-        cursor: auto  
   .booking
     width: 340px
     padding: 30px 22px 26px 23px
     margin-bottom: 0
-    &__button,
-    &__number
-      cursor: auto
   .map
     width: 340px
   .reviews
     padding-top: 40px
     &__title
+      max-height: 114px
       margin-left: -2px
       font-size: 30px
       line-height: 38px
@@ -183,12 +188,12 @@
         padding: 0 60px 30px
       &__button
         top: 50%
-        cursor: auto
         &--prev
           left: 2px
         &--next
           right: 2px
       &__text
+        max-height: 133px
         margin: 1px 0 0 4px
   .activities
     padding-top: 50px
@@ -200,8 +205,6 @@
       min-width: 340px
       min-height: 255px
       margin-left: 0
-      &__button
-        cursor: auto
   .footer
     padding-top: 73px
     &-wrapper
@@ -221,8 +224,6 @@
         grid-column: 2 / 4
         grid-row: 1
         align-self: center
-    &__lin
-      cursor: auto
     &__categories
       grid-column: 1 / 1
       grid-row: 2
@@ -239,6 +240,8 @@
         margin-bottom: 24px
       &--margin-contact
         margin-top: 10px
+      &--margin-social-network
+        max-width: 344px
     &__text
       font-style: normal
       font-weight: normal
@@ -247,6 +250,7 @@
       margin-bottom: 22px
       margin-left: 0
     &__item
+      max-height: 88px
       &--margin-map
         margin-bottom: 13px
     &__icon
@@ -264,21 +268,13 @@
         width: 539px
     &__input
       width: 255px
-    &__phone,
-    &__mail,
-    &__button
-      cursor: auto
     &__policy
-      margin-top: 58px
+      margin-top: 63px
+      margin-left: 2px
       justify-content: space-between
-      &-item
-        cursor: auto
-  .modal
-    &__dialog
-      min-width: 452px
-    &__button,
-    &__close
-      cursor: auto
+    .modal
+      &__dialog
+        min-width: 452px
 @media (max-width: 767px)
   .container
     max-width: 700px
@@ -321,7 +317,7 @@
       &__search
         width: 243px
         margin-left: 0
-        margin-bottom: 13px
+        margin-bottom: 9px
     &-menu
       flex-direction: column
       &__item
@@ -329,7 +325,9 @@
         &--mobile
           &--visible
             display: block
-            margin-bottom: 26px
+            margin-bottom: 30px
+            max-width: 257px
+            max-height: 100px
   .logo
     width: 99px
     height: auto
@@ -344,17 +342,24 @@
       flex-direction: column
       border: none
       background-color: #ffffff
-      cursor: pointer
+      cursor: auto
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
   .user
+    &__avatar
+      &--margin
+        margin-top: 3px
     &__name
       &--light
+        max-width: 233px
+        text-align: center
+        max-height: 34px
         color: $light
         margin-left: 0
         margin-top: 10px
+        cursor: auto
   .hotel
     padding-bottom: 40px
     padding-top: 1px
@@ -370,6 +375,10 @@
     &-data
       flex-direction: column
   .other-packages
+    &__title
+      max-height: 69px
+      font-size: 18px
+      line-height: 23px
     &-grid
       grid-template-columns: 1fr
     &-card
@@ -411,6 +420,7 @@
       margin-bottom: 37px
   .reviews
     &__title
+      max-height: 70px
       font-size: 18px
       line-height: 23px
       margin-bottom: 43px
@@ -421,6 +431,7 @@
         &:before, &:after
           display: none
       &__text
+        max-height: 140px
         max-width: 455px
       &__button
         top: 28px
@@ -458,19 +469,20 @@
       padding: 33px 55px
       min-width: 370px
     &__button
-      order: 1
-      width: 100%
-    &__info
-      margin-bottom: 15px
       width: 100%
     &__message
       margin-bottom: 15px
+    &__info
+      max-width: 224px
 @media (max-width: 576px)
   .navbar
+    &-top
+      padding-top: 22px
+      padding-bottom: 30px
     .menu-button
-      margin-top: 5px
+      margin-top: 7px
   .breadcrum-list
-    padding: 19px 0
+    padding: 11px 0 20px 0
   .hotel
     padding-bottom: 0
     &-wrapper
@@ -520,6 +532,8 @@
       margin-left: 8px
   .subscribe
     width: 100%
+    &__input
+      padding-left: 21px
   .newsletter
     padding-top: 76px
     padding-bottom: 83px
@@ -531,24 +545,32 @@
         font-size: 30px
         line-height: 38px
   .reviews
-    padding-top: 39px
-    padding-bottom: 50px
+    padding-top: 41px
+    padding-bottom: 49px
+    &__title
+      max-height: 69px
     &-slider
       &__text
-        max-width: 219px
+        max-height: 286px
+        min-width: 218px
         margin: 1px -1px 0 0px
+        text-align: start
+      &__profile
+        margin-left: -3px
   .activities
     padding-bottom: 40px
     &__card:nth-child(1)
       order: 1
     &__card:nth-child(2)
       order: 3
+      margin-bottom: 20px
     &__card:nth-child(3)
       order: 2
-      margin-bottom: 29px
+      margin-bottom: 28px
     &__card:nth-child(4)
       order: 4
     &__title
+      max-height: 48px
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
@@ -562,12 +584,14 @@
       &-group
         margin-top: 15px
         width: 100%
+        margin-left: -2px
         &:first-child
           margin-top: 0
     &-wrapper
       grid-template-columns: 1fr
       row-gap: 28px
     &__logo
+      margin-left: -1px
       width: 97px
       &-wrapper
         grid-row: 1
@@ -578,21 +602,31 @@
         grid-row: 2
         grid-column: 1
         margin-left: 0
+    &__list
+      max-width: 278px
     &__image
+      margin-top: 3px
       margin-left: 3px
     &__title
+      max-width: 278px
       flex-basis: 100%
       margin-top: 1px
       &--margin-social-network
+        display: block
         margin: 0 0 17px 0
         min-width: 100%
       &--margin-contact-details
-        margin-bottom: 23px
+        margin-bottom: 25px
+        margin-left: -2px
         margin-top: 12px
       &--margin-contact
-        margin-top: 30px
+        margin-top: 29px
         margin-bottom: 15px
+        margin-left: -2px
     &__text
+      max-width: 278px
+      max-height: 63px
+      margin-left: -2px
       margin-bottom: 20px
     &__additional
       grid-row: 4
@@ -615,11 +649,26 @@
       margin-left: 4px
       &-wrapper
         min-width: 30px
+    &__mail
+        max-height: 44px
+        max-width: 239px
     &__item
+      max-height: 110px
+      max-width: 100%
       &-wrapper
-        margin-bottom: 10px
+        max-width: 279px
+        margin-bottom: 13px
       &--margin-map
         margin-bottom: 22px
+      &-text
+        max-height: 66px
+        max-width: 239px
+    &__link
+      margin-right: 7px
+      width: 100%
+      &-phone
+        max-width: 239px
+        max-height: 110px
     &__input
       order: 1
     &__message
@@ -631,9 +680,11 @@
       order: 3
       flex-basis: 100%
       margin-bottom: 15px
+      max-width: 278px
     &__policy
       flex-wrap: wrap
       margin-top: 29px
+      margin-left: -2px
       &-item
         margin-right: 9px
       &-item:last-child
@@ -642,7 +693,11 @@
           width: 136px
           height: 22px
           flex-shrink: 0
+      &-payment
+        position: relative
   .modal
     &__dialog
       min-width: 278px
       padding: 33px 26px
+    &__title
+      max-width: 226px

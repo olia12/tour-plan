@@ -1,6 +1,8 @@
 .other-packages
   padding: 40px 0 70px
   &__title
+    max-height: 135px
+    overflow: auto
     margin-top: 0
     margin-bottom: 63px
     font-style: normal
@@ -40,6 +42,9 @@
       object-fit: cover
       z-index: 50
     &__offer
+      max-width: 110px
+      max-height: 38px
+      overflow: hidden
       top: 26px
       left: 0
       padding: 4px 9px
@@ -62,16 +67,22 @@
         height: 100%
         padding: 41px 21px 30px 46px
     &__card-title
-      margin: 0 0 23px 0
+      max-height: 69px
+      overflow: auto
+      margin: 0 0 24px 0
       font-weight: bold
       font-size: 18px
       line-height: 23px
       &--margin
-        margin-bottom: 27px
+        margin-bottom: 29px
         margin-left: -1px
     &__description
+      max-height: 30px
+      overflow: auto
       width: 88%
     &__long-description
+      max-height: 154px
+      overflow: auto
       font-size: 14px
       line-height: 160.6%
       margin-bottom: 44px
@@ -91,6 +102,10 @@
     &__icon
       margin-right: 14px
     &__old-price
+      display: inline-block
+      max-width: 132px
+      max-height: 56px
+      overflow: auto
       font-size: 14px
       line-height: 18px
       text-decoration: line-through 1px $light
@@ -98,13 +113,17 @@
       display: flex
       justify-content: space-between
       align-items: center
+      margin-top: -4px
     &__pricetag
-      margin-left: 1px
+      max-height: 90px
+      overflow: auto
       font-weight: bold
       font-size: 24px
       line-height: 30px
       max-width: 107px
     &__button
+      max-height: 59px
+      overflow: hidden
       padding: 11px 27px 10px 26px
       font-family: Nunito, sans-serif
       font-size: 14px
