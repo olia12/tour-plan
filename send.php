@@ -31,7 +31,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'vcepokaaa@mail.ru'; // Логин на почте
-    $mail->Password   = 'LhBeDerhvEo5T515jpMv'; // Пароль на почте
+    $mail->Password   = 'UiwkkMqLnbzZTNHSAtQZ'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('vcepokaaa@mail.ru', 'Ольга Попова'); // Адрес самой почты и имя отправителя
@@ -54,7 +54,8 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 
 // Отображение результата
-//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html');
+
